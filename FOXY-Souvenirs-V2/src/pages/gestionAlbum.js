@@ -1,3 +1,4 @@
+import { afficherThemes } from "./themes";
 export function afficherGestionAlbum(albumId) {
 
     document.querySelector("#contenu").innerHTML = `
@@ -40,5 +41,12 @@ export function afficherGestionAlbum(albumId) {
         </button>
 
     `;
+document.querySelector("#themesAlbum").addEventListener(
+    "click",
+    () => {
 
+        afficherThemes(albumId);
+
+    }
+);
 }

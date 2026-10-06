@@ -3,17 +3,18 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBPGaEHCH_8Ka4lWj96KT5BtxPExewJfSY",
-  authDomain: "foxy-souvenirs.firebaseapp.com",
-  projectId: "foxy-souvenirs",
-  storageBucket: "foxy-souvenirs.firebasestorage.app",
-  messagingSenderId: "784630360710",
-  appId: "1:784630360710:web:7f962d2748ab852c9c3f07"
+    apiKey: "AIzaSyBPkGitc0hhGUxj3B4zmba0M2fxMMAjmAw",
+    authDomain: "foxy-souvenirs-6a969.firebaseapp.com",
+    projectId: "foxy-souvenirs-6a969",
+    storageBucket: "foxy-souvenirs-6a969.firebasestorage.app",
+    messagingSenderId: "300667789931",
+    appId: "1:300667789931:web:b185163d3367385c9b872e"
 };
 
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
+
 const db = getFirestore(app);
 
 export { app, auth, db };

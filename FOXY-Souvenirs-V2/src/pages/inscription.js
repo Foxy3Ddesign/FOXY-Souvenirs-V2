@@ -17,13 +17,22 @@ export async function creerCompte(email, motDePasse) {
 
         console.log("Compte créé :", utilisateur.user.email);
 
+        // Affiche le tableau de bord après la création du compte
+        afficherTableauDeBord(
+            utilisateur.user.email,
+            utilisateur.user.uid
+        );
+
     } catch (erreur) {
 
-        console.error(erreur.message);
+        console.error("Erreur de création du compte :", erreur.message);
+
+        alert("Impossible de créer le compte : " + erreur.message);
 
     }
 
 }
+
 export async function connexion(email, motDePasse) {
 
     try {
@@ -35,13 +44,15 @@ export async function connexion(email, motDePasse) {
         );
 
         afficherTableauDeBord(
-    utilisateur.user.email,
-    utilisateur.user.uid
-);
+            utilisateur.user.email,
+            utilisateur.user.uid
+        );
 
     } catch (erreur) {
 
         console.error("Erreur de connexion :", erreur.message);
+
+        alert("Impossible de se connecter : " + erreur.message);
 
     }
 
