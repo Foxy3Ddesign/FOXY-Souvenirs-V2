@@ -30,14 +30,6 @@ document.querySelector("#app").innerHTML = `
                     Ajouter mes photos
                 </a>
 
-                <a
-                    class="lien-livre-or"
-                    href="${lienAlbum}"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Écrire dans le livre d'or
-                </a>
-
             </div>
 
         </div>
